@@ -3,25 +3,35 @@
  */
 package fr.eseo.e3e.pdlo.entities;
 
+import fr.eseo.e3e.pdlo.utils.Coordonnees;
+import fr.eseo.e3e.pdlo.utils.Direction;
+
 /**
  * 
  */
 public class PacMan extends Entity {
-    private int score;
-    
-    
-    public PacMan(int x, int y) {
-        super(x, y);
-        this.score = 0;
+	private int score;
+	private Coordonnees position;
+    private boolean dead = false;
+
+	public PacMan(int x, int y) {
+		super(x, y);
+		this.score = 0;
+	}
+
+	@Override
+	public void move(Direction direction) {
+
+	}
+
+	public void eatBonus(Bonus bonus) {
+
+	}
+    public void die() {
+        this.dead = true;
     }
 
-    @Override
-    public void move() {
-      
+    public boolean isDead() {
+        return dead;
     }
-
-    public void eatBonus(Bonus bonus) {
-        
 }
-}
-

@@ -3,6 +3,8 @@
  */
 package fr.eseo.e3e.pdlo.entities;
 
+import fr.eseo.e3e.pdlo.utils.Direction;
+
 /**
  * 
  */
@@ -30,5 +32,5 @@ public abstract class Entity {
 		this.y = y;
 	}
 
-	public abstract void move();
+	public abstract void move(Direction direction);
 }
