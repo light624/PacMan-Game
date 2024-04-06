@@ -5,6 +5,7 @@ import fr.eseo.e3e.pdlo.utils.Direction;
 public class Bonus extends Entity {
 
 	private boolean collected;
+    private int value;
 
 	public Bonus(int x, int y) {
 		super(x, y);
@@ -15,6 +16,9 @@ public class Bonus extends Entity {
 		this.collected = true;
 
 	}
+    public int getValue(){
+        return this.value;
+    }
 
 	@Override
 	public void move(Direction direction) {

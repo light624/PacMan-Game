@@ -25,6 +25,7 @@ public class PacMan extends Entity {
 	}
 
 	public void eatBonus(Bonus bonus) {
+        this.score+=bonus.getValue();
 
 	}
     public void die() {
