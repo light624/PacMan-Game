@@ -14,7 +14,7 @@ public class GameWindow extends JFrame {
 
     public GameWindow() {
         setTitle("PacMan Game");
-        setSize(922, 661); // Taille de l'image
+        setSize(922, 661); 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
         
