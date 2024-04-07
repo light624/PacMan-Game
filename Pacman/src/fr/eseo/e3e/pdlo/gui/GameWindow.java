@@ -13,16 +13,12 @@ public class GameWindow extends JFrame {
         
         gamePanel = new GamePanel();
         add(gamePanel);
-        pack(); 
-    }
-    
-    public void startGame() {
-        setLocationRelativeTo(null); 
+        pack();
+        setLocationRelativeTo(null);
         setVisible(true);
-        gamePanel.startGameLoop();
     }
 
     public static void main(String[] args) {
-        new GameWindow().startGame();
+        new GameWindow();
     }
 }
